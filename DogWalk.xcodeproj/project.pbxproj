@@ -14,6 +14,9 @@
 		65B139371B735ECE007D17D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B139361B735ECE007D17D6 /* Images.xcassets */; };
 		65B1393A1B735ECE007D17D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B139381B735ECE007D17D6 /* LaunchScreen.xib */; };
 		65B139461B735ECE007D17D6 /* DogWalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B139451B735ECE007D17D6 /* DogWalkTests.swift */; };
+		65B139501B736149007D17D6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1394F1B736149007D17D6 /* CoreDataStack.swift */; };
+		65B139531B736987007D17D6 /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B139511B736987007D17D6 /* Walk.swift */; };
+		65B139541B736987007D17D6 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B139521B736987007D17D6 /* Dog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		65B1393F1B735ECE007D17D6 /* DogWalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogWalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B139441B735ECE007D17D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65B139451B735ECE007D17D6 /* DogWalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogWalkTests.swift; sourceTree = "<group>"; };
+		65B1394F1B736149007D17D6 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		65B139511B736987007D17D6 /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		65B139521B736987007D17D6 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +86,14 @@
 			isa = PBXGroup;
 			children = (
 				65B1392C1B735ECE007D17D6 /* AppDelegate.swift */,
+				65B1394F1B736149007D17D6 /* CoreDataStack.swift */,
 				65B139311B735ECE007D17D6 /* ViewController.swift */,
 				65B139331B735ECE007D17D6 /* Main.storyboard */,
 				65B139361B735ECE007D17D6 /* Images.xcassets */,
 				65B139381B735ECE007D17D6 /* LaunchScreen.xib */,
 				65B1392E1B735ECE007D17D6 /* DogWalk.xcdatamodeld */,
+				65B139511B736987007D17D6 /* Walk.swift */,
+				65B139521B736987007D17D6 /* Dog.swift */,
 				65B1392A1B735ECE007D17D6 /* Supporting Files */,
 			);
 			path = DogWalk;
@@ -217,7 +226,10 @@
 			files = (
 				65B139321B735ECE007D17D6 /* ViewController.swift in Sources */,
 				65B1392D1B735ECE007D17D6 /* AppDelegate.swift in Sources */,
+				65B139541B736987007D17D6 /* Dog.swift in Sources */,
+				65B139531B736987007D17D6 /* Walk.swift in Sources */,
 				65B139301B735ECE007D17D6 /* DogWalk.xcdatamodeld in Sources */,
+				65B139501B736149007D17D6 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +425,7 @@
 				65B1394B1B735ECE007D17D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65B1394C1B735ECE007D17D6 /* Build configuration list for PBXNativeTarget "DogWalkTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +434,7 @@
 				65B1394E1B735ECE007D17D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
