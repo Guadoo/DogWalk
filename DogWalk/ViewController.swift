@@ -37,6 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         if let dogs = result{
             if dogs.count == 0{
+                
                 currentDog = Dog(entity: dogEntity!, insertIntoManagedObjectContext: managedContext)
                 currentDog.name = dogName
                 
@@ -50,7 +51,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             println("Could not fetch: \(error)")
         }
     }
-
 
     @IBAction func add(sender: AnyObject) {
         
@@ -103,6 +103,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = .ShortStyle
         dateFormatter.timeStyle = .MediumStyle
+        
+        // 日期显示本土化 "zh_cn"
+        dateFormatter.doesRelativeDateFormatting = true
+        dateFormatter.locale = NSLocale(localeIdentifier: "zh_cn")
         
         //the next two statements have changed
         let walk = currentDog.walks[indexPath.row] as! Walk

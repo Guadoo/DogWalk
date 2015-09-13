@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6El-PB-rIc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6El-PB-rIc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -53,7 +53,7 @@
                                     <outlet property="delegate" destination="YRz-j0-vIN" id="4N0-3W-4oJ"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AwD-lQ-KXK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="AwD-lQ-KXK">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="Ub1-hr-DNI">
@@ -124,7 +124,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="06G-yV-zzs">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="SaL-FN-IXi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SaL-FN-IXi">
                             <connections>
                                 <action selector="add:" destination="YRz-j0-vIN" id="won-ba-O6b"/>
                             </connections>
@@ -139,4 +139,7 @@
             <point key="canvasLocation" x="1428" y="-451.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dog.png" width="256" height="256"/>
+    </resources>
 </document>
